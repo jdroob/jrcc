@@ -8,7 +8,7 @@ LIBS = -lm
 ARGS =
 CFLAGS = -Wall -Wconversion -g -O0 -Wno-sequence-point -Wno-unused-function
 DEBUG_CFLAGS = -DDEBUG
-EXE = jrcc
+EXE = jcc
 
 SOURCES = $(wildcard $(SRC)/*.c)
 OBJECTS = $(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(SOURCES))

@@ -1,2 +1,15 @@
 ## Writing a C Compiler
+### WILL BECOME IMPORTANT LATER
+- TODO:  Implement basic data structures:
+  - dynamic array (see ValueArray_t example)
+  - table (see Table_t example)
+- TODO: Implement pattern matching (apparently this differs from regex)
 ### Chapter 1
+- TODO: Implement compiler driver
+- Use get_opt for args
+  - `--lex` lexes and stops (no output)
+  - `--parse` lexes, parses, and stops (no output)
+  - `--codegen` lexes, parses, codegens, and stops (no output)
+  - No args? Just a path to the C file? Compile the file and emit an executable in same dir as source file with same name (e.g. src/hello.c --> src/hello)
+  - TODO: Implement the lexer
+    - Use same tries approach as Lox
